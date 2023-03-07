@@ -1,0 +1,227 @@
+.popup-contact {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(74, 113, 99, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.6s ease 0s;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.open .popup__content {
+        opacity: 1;
+        transition: all 0.6s ease 0s;
+        transform: translate(0px, 0px)
+    }
+
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebd0cf;
+        color: #4a7163;
+        max-width: 800px;
+        padding: 30px;
+        position: relative;
+        opacity: 0;
+        transition: all 0.6s ease 0s;
+        transform: translate(0px, -100%);
+
+        @media(max-width: 650px) {
+            flex-direction: column;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        transform: rotate(-90deg);
+        transition: all 0.6s ease 0s;
+    }
+
+    &__close:hover {
+        transform: rotate(90deg);
+        transition: all 0.6s ease 0s;
+    }
+
+    &__close .fa {
+        color:#4a7163;
+        font-size: 30px;
+    }
+
+    &__text {
+        margin-right: 30px;
+        @media(max-width: 650px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-size: 20px;
+
+        @media(max-width: 650px) {
+            font-size: 17px;
+        }
+    }
+}
+
+.form {
+    color:#4a7163;
+
+    & * {
+        outline: none;
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../img/Spinner-1s-200px.gif") center / 50px no-repeat;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__body._sending::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 18px;
+        box-sizing: border-box;
+        padding: 20px;
+        border: none;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__input:focus {
+        box-shadow: 4px 4px 17px 1px rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease 0s;
+    }
+
+    &__input._error {
+        box-shadow: 4px 4px 17px 1px rgba(255, 41, 41, 0.548);
+    }
+
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        background-color: #4a7163;
+        color: #ebd0cf;
+        font-size: 18px;
+        font-family: "Lora";
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+    }
+
+    &__button:hover {
+        background-color: #649483;
+    }
+}
+
+.checkbox {
+
+    &._error .checkbox__label::before {
+        box-shadow: 4px 4px 17px 1px rgba(255, 41, 41, 0.548);
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__input:checked + .checkbox__label::after {
+        transform: scale(1);
+        transition: all 0.5s ease 0s;
+    }
+
+    &__label {
+        font-size: 16px;
+        line-height: 140%;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__label::before {
+        content: "";
+        flex: 0 0 24px;
+        height: 24px;
+        background-color: #fff;
+        border-radius: 4px;
+        align-self: flex-start;
+        margin-right: 10px;
+    }
+
+    &__label::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background-color: #4a7163;
+        border-radius: 4px;
+        transform: scale(0);
+        transition: all 0.6s ease 0s;
+    }
+
+    &__label a {
+        color: #1f2e29;
+    }
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    box-sizing: border-box;
+}

@@ -1,0 +1,130 @@
+.about {
+    position: relative;
+    padding: 0 20px;
+    &::before {
+        content: "";
+        background-image: url('../img/background-1.png');
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 615px;
+        z-index: -1;
+
+        @media (max-width: 830px) and (min-width: 700px) {
+            height: 510px
+        }
+
+        @media (max-width: 700px) and (min-width: 476px) {
+            width: 100%;
+            height: 310px;
+        }
+
+        @media (max-width: 476px) {
+            width: 100%;
+            height: 360px;
+        }
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        width: 1110px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 700px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        width: 410px;
+        height: 615px;
+
+        @media (max-width: 830px) and (min-width: 700px) {
+            width: 340px;
+            height: 510px
+        }
+
+        @media (max-width: 700px) {
+            width: 250px;
+            height: 375px;
+            margin-top: 45px;
+        }
+    }
+
+    &__text {
+        width: 500px;
+
+        @media (max-width: 700px) {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
+    &__header {
+        font-size: 65px;
+        color: #ebd0cf;
+        font-weight: 400;
+
+        @media (min-width: 830px) and (max-width: 1060px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 830px) and (min-width: 360px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 360px) {
+            font-size: 30px;
+        }
+    }
+
+    &__description {
+        margin-top: 60px;
+        font-size: 18px;
+        color: #ebd0cf;
+
+        @media (min-width: 830px) and (max-width: 1060px) {
+            width: 380px;
+        }
+
+        @media (min-width: 700px) and (max-width: 830px) {
+            margin-top: 40px;
+            width: 330px;
+        }
+
+        @media (max-width: 700px) {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        margin-top: 55px;
+        background-color: #ebd0cf;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        color: #4a7163;
+        transition: all 0.3s ease 0s;
+
+        @media (max-width: 700px) {
+            margin-top: 40px;
+        }
+    }
+
+    &__button:hover {
+        @media (min-width: $screensz1) {
+            background-color: #649483;
+            color: #ebd0cf;
+            transition: all 0.3s ease 0s;
+            box-shadow: 4px 4px 17px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

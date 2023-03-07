@@ -1,0 +1,126 @@
+$screensz1: 900px;
+
+.page-footer {
+    background-color: #4a7163;
+    padding: 0 20px;
+
+    &__wrapper {
+        max-width: 100%;
+        width: 1110px;
+        margin: 0 auto;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $screensz1) and (min-width: 520px) {
+            height: 100px;
+        }
+
+        @media(max-width: 520px) {
+            justify-content: center;
+            height: 100px;
+        }
+    }
+
+    &__logo {
+        background-color: #ebd0cf;
+        color: #4a7163;
+        font-size: 25px;
+        padding: 5px 15px;
+
+        @media (min-width: 520px) and (max-width: $screensz1) {
+            font-size: 20px;
+        }
+
+        @media(max-width: 520px) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        @media(max-width: $screensz1) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list li {
+        margin-right: 40px;
+    }
+
+    &__list li:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: #ebd0cf;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__inst {
+        margin-right: 30px;
+        background: url(../img/Instagram.png);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__inst:hover {
+        @media (min-width: $screensz1) {
+            background-position: 0 -40px;
+            transition: all 0.5s ease 0s;
+        }
+    }
+
+    &__tg {
+        margin-right: 30px;
+        background: url(../img/telegram.png);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__tg:hover {
+        @media (min-width: $screensz1) {
+            background-position: 0 -40px;
+            transition: all 0.5s ease 0s;
+        }
+    }
+
+    &__vk {
+        background: url(../img/vk.png);
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        transition: all 0.5s ease 0s;
+    }
+
+    &__vk:hover {
+        @media (min-width: $screensz1) {
+            background-position: 0 -40px;
+            transition: all 0.5s ease 0s;
+        }
+    }
+}
+

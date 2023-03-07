@@ -1,0 +1,197 @@
+$screensz1: 900px;
+
+.intro {
+    @media(max-width: $screensz1) {
+        margin-top: 70px;
+    }
+
+    &__header {
+        padding: 0 15px;
+        background-color: #ebd0cf;
+    }
+
+    &__main {
+        padding: 0 15px;
+        background-color: #4a7163;
+    }
+}
+
+.header {
+ 
+    &__wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 1110px;
+        height: 400px;
+        margin: 0 auto;
+
+        @media(max-width: $screensz1) and (min-width: 700px) {
+            height: 250px;
+        }
+
+        @media (max-width: 700px) and (min-width: 527px) {
+            height: 110px;
+        }
+
+        @media (max-width: 527px) {
+            height: 135px;
+        }
+    }
+
+    &__wrapper::before {
+        content: "";
+        background-image: url('../img/image-11.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -50px 0;
+        width: 380px;
+        height: 590px;
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        
+        @media (max-width: $screensz1) and (min-width: 700px) {
+            background-position: -35px 0;
+            background-size: 310px auto;
+            width: 280px;
+            height: 430px;
+        }
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        width: 670px;
+        text-align: left;
+        right: 0;
+        top: 180px;
+
+        @media (min-width: 1000px) and (max-width: 1100px) {
+            width: 590px;
+        }
+
+        @media (min-width: $screensz1) and (max-width: 1020px) {
+            width: 460px;
+            top: 80px;
+        }
+
+        @media (min-width: 790px) and (max-width: $screensz1) {
+            width: 460px;
+            top: 120px;
+            right: 30px;
+        }
+
+        @media (min-width: 700px) and (max-width: 790px) {
+            width: 400px;
+            top: 130px;
+        }
+
+        @media (max-width: 700px) {
+            top: 30px;
+            left: 0;
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+
+    &__info {
+        margin-top: 45px;
+        font-size: 60px;
+        color: #4a7163;
+
+        @media (min-width: 790px) and (max-width: $screensz1) {
+            font-size: 35px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 790px) {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+.main {
+    &__wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 1110px;
+        height: 300px;
+        margin: 0 auto;
+
+        @media (max-width: $screensz1) and (min-width: 700px) {
+            height: 230px;
+        }
+
+        @media (max-width: 700px) {
+            height: 180px;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        right: 0px;
+        width: 670px;
+        margin-top: 30px;
+
+        @media (min-width: 1000px) and (max-width: 1100px) {
+            width: 590px;
+        }
+
+        @media (min-width: $screensz1) and (max-width: 1020px) {
+            width: 460px;
+        }
+
+        @media (min-width: 790px) and (max-width: $screensz1) {
+            width: 460px;
+            right: 30px;
+            margin-top: 15px;
+        }
+
+        @media (min-width: 700px) and (max-width: 790px) {
+            width: 400px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 700px) {
+            width: 100%;
+            left: 0;
+            margin-top: 15px;
+        }
+    }
+
+    &__description {
+        color: #ebd0cf;
+        font-size: 18px;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: #ebd0cf;
+        padding: 15px 40px;
+        margin-top: 45px;
+        text-transform: uppercase;
+        color: #4a7163;
+        transition: all 0.3s ease 0s;
+
+        @media(max-width: $screensz1) {
+            margin-top: 35px;
+        }
+    }
+
+    &__button:hover {
+        @media (min-width: $screensz1) {
+            background-color: #649483;
+            color: #ebd0cf;
+            transition: all 0.3s ease 0s;
+            box-shadow: 4px 4px 17px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

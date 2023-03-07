@@ -1,0 +1,198 @@
+$screensz1: 900px;
+
+.main-header {
+    background-color: #ebd0cf;
+
+    &__body {
+        border-bottom: 2px solid #4a7163;
+        @media (max-width: $screensz1) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1100px;
+        padding: 0 15px;
+        height: 120px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: $screensz1) {
+            height: 70px;
+            background-color: #ebd0cf;
+        }
+    }
+
+    &__logo {
+        background-color: #4a7163;
+        color: #ebd0cf;
+        font-size: 25px;
+        padding: 5px 15px;
+
+        @media(max-width: $screensz1) {
+            font-size: 20px;
+        }
+    }
+
+    &__menu {
+        @media(max-width: $screensz1) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            transform: translate(-100%, 0px);
+            background-color: #4a7163;
+            padding: 80px 0px;
+            transition: transform 0.3s ease 0s;
+            overflow: auto;
+            z-index: -1;
+        }
+    }
+
+    &__menu._active {
+        transform: translate(0px, 0px);
+        transition: transform 0.3s ease 0s;
+    }
+
+    &__menu::before {
+        @media (max-width: $screensz1) {
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 70px;
+            z-index: 50;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $screensz1) {
+            flex-direction: column;
+        }
+    }
+
+    &__list > li {
+        margin-right: 60px;
+        transition: transform 0.3s ease 0s;
+
+        @media (max-width: $screensz1) {
+            padding: 20px 15px;
+            margin-right: 0;
+            border-bottom: 2px solid #649483;
+        }
+    }
+
+    &__list > li:hover {
+        @media (min-width: $screensz1) {
+            color: #649483;
+            text-decoration: underline;
+            transition: transform 0.3s ease 0s;
+        }
+    }
+
+    &__list > li:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        font-size: 22px;
+        color: #4a7163;
+
+        @media (max-width: $screensz1) {
+            color:#ebd0cf;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+    }
+
+    &__icons {
+        display: none;
+    }
+
+    &__icons .fa {
+        font-size: 24px;
+        color: #4a7163;
+        transition: transform 0.3s ease 0s;
+
+        @media(max-width: $screensz1) {
+            display: none;
+        }
+    }
+
+    &__icons .fa:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease 0s;
+    }
+}
+
+.header-burger {
+    display: none;
+
+    @media (max-width: $screensz1) {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 25px;
+        z-index: 3;
+        margin-left: 18px;
+        cursor: pointer;
+
+    & span {
+        position: absolute;
+        background-color: #4a7163;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        top: 10px;
+        transition: all 0.3s ease 0s;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        background-color: #4a7163;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    &._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -70%);
+    }
+
+    &._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 70%);
+
+    }
+  }
+}
+

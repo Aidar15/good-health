@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="icon" href="img/favicons/shamrock-svgrepo-com.svg" type="image/svg+xml">
+    <title>Good Health</title>
+</head>
+<body class="page-body">
+    <header class="main-header lock-padding">
+        <div class="main-header__body">
+            <div class="main-header__wrapper">
+                <a href="" class="main-header__logo">GOOD HEALTH</a>
+                <div class="main-header__menu">
+                    <ul class="main-header__list">
+                        <li>
+                            <a data-goto=".section-1" href="#" class="main-header__link">Блог</a>
+                        </li>
+                        <li>
+                            <a data-goto=".section-2" href="#" class="main-header__link">Обо мне</a>
+                        </li>
+                        <li>
+                            <a data-goto=".section-3" href="#" class="main-header__link">Рецепты</a>
+                        </li>
+                        <li>
+                            <a href="#popup-contact" class="main-header__link popup-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="main-header__icons"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <div class="header-burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro lock-padding">
+        <div class="intro__header">
+            <div class="header__wrapper">
+                <div class="header__text">
+                    <div class="header__info">Всем привет! Я Кафизова Эльвира</div>
+                </div>
+            </div>
+        </div>
+        <div class="intro__main">
+            <div class="main__wrapper">
+                <div class="main__text">
+                    <div class="main__description">Я семейный врач с интегративным и превентивным подходом...</div>
+                    <a href="#popup" class="main__button popup-link">Подробнее</a>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section class="blog section-1 lock-padding">
+        <div class="blog__wrapper">
+            <h2 class="blog__header">Мой блог</h2>
+            <div class="blog__list">
+                <div class="blog__item">
+                    <img src="img/tmin.jpg" alt="Black tmin" class="blog__item-image">
+                    <div class="blog__item-header"><a href="#popup1" class="blog__item-link popup-link">Мало черного тмина</a></div>
+                    <div class="blog__item-text">Важнейшие компоненты масла — фитостеролы. Эти вещества стимулируют выработку желчи и гормонов, 
+                    снимают воспаление, участвуют  в предотвращении появления опухолей...</div>
+                </div>
+                <div class="blog__item">
+                    <img src="img/tmin.jpg" alt="Black tmin" class="blog__item-image">
+                    <div class="blog__item-header"><a href="#popup2" class="blog__item-link popup-link">Мало черного тмина</a></div>
+                    <div class="blog__item-text">Важнейшие компоненты масла — фитостеролы. Эти вещества стимулируют выработку желчи и гормонов, 
+                    снимают воспаление, участвуют  в предотвращении появления опухолей...</div>
+                </div>
+                <div class="blog__item">
+                    <img src="img/tmin.jpg" alt="Black tmin" class="blog__item-image">
+                    <div class="blog__item-header"><a href="#popup3" class="blog__item-link popup-link">Мало черного тмина</a></div>
+                    <div class="blog__item-text">Важнейшие компоненты масла — фитостеролы. Эти вещества стимулируют выработку желчи и гормонов, 
+                    снимают воспаление, участвуют  в предотвращении появления опухолей...</div>
+                </div>
+                <div class="blog__item">
+                    <img src="img/tmin.jpg" alt="Black tmin" class="blog__item-image">
+                    <div class="blog__item-header"><a href="#popup4" class="blog__item-link popup-link">Мало черного тмина</a></div>
+                    <div class="blog__item-text">Важнейшие компоненты масла — фитостеролы. Эти вещества стимулируют выработку желчи и гормонов, 
+                    снимают воспаление, участвуют  в предотвращении появления опухолей...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about section-2 lock-padding">
+        <div class="about__wrapper">
+            <div class="about__text">
+                <h2 class="about__header">Познакомимся?</h2>
+                <div class="about__description">Меня зовут Кафизова Эльвира Рифгатовна, я врач - терапевт с 
+                    превентивным и интегративным подходом. Любое заболевание проще и эффективней предотвратить, чем лечить!</div>
+                <a href="#popup-about" class="about__button popup-link">Подробнее</a>
+            </div>
+            <img src="img/image-13.png" alt="Elvira" class="about__image">
+        </div>
+    </section>
+    <section class="recips section-3 lock-padding">
+        <div class="recips__wrapper">
+            <h2 class="recips__header">Мои рецепты</h2>
+            <div class="recips__slider swiper">
+                <div class="recips__slider-wrapper slider swiper-wrapper">
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-1.JPG" class="recips__slider-image" alt="Recipe1">
+                        <div href="#popup-recipe1" class="recips__slider-description popup-link">Recipe 1</div>
+                    </div>
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-2.jpg" class="recips__slider-image" alt="Recipe2">
+                        <div href="#popup-recipe2" class="recips__slider-description popup-link">Recipe 2</div>
+                    </div>
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-3.jpg" class="recips__slider-image" alt="Recipe3">
+                        <div href="#popup-recipe3" class="recips__slider-description popup-link">Recipe 3</div>
+                    </div>
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-4.jpg" class="recips__slider-image" alt="Recipe4">
+                        <div href="#popup-recipe4" class="recips__slider-description popup-link">Recipe 4</div>
+                    </div>
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-5.jpg" class="recips__slider-image" alt="Recipe5">
+                        <div href="#popup-recipe5" class="recips__slider-description popup-link">Recipe 5</div>
+                    </div>
+                    <div class="recips__slider-item swiper-slide">
+                        <img src="img/image-6.jpg" class="recips__slider-image" alt="Recipe6">
+                        <div href="#popup-recipe6" class="recips__slider-description popup-link">Recipe 6</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer section-4 lock-padding">
+        <div class="page-footer__wrapper">
+            <a href="" class="page-footer__logo">GOOD HEALTH</a>
+            <div class="page-footer__menu">
+                <ul class="page-footer__list">
+                    <li>
+                        <a data-goto=".section-1" href="#" class="page-footer__link">Блог</a>
+                    </li>
+                    <li>
+                        <a data-goto=".section-2" href="#" class="page-footer__link">Обо мне</a>
+                    </li>
+                    <li>
+                        <a data-goto=".section-3" href="#" class="page-footer__link">Рецепты</a>
+                    </li>
+                    <li>
+                        <a href="#popup-contact" class="page-footer__link popup-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__icons">
+                <a href="https://www.instagram.com/elffi33/" class="page-footer__inst" target="_blank"></a>
+                <a href="https://t.me/Dr_V_Elvira" class="page-footer__tg" target="_blank"></a>
+                <a href="https://vk.com/velffi" class="page-footer__vk" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup popup-intro">
+        <div class="popup__body popup-intro__body">
+            <div class="popup__content popup-intro__content">
+                <a href="#" class="popup__close close-popup popup-intro__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/image-10.jpg" alt="Elvira2" class="popup__image popup-intro__image">
+                <div class="popup__text popup-intro__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup1" class="popup popup-blog">
+        <div class="popup__body popup-blog__body">
+            <div class="popup__content popup-blog__content">
+                <a href="#" class="popup__close close-popup popup-blog__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/tmin.jpg" alt="Black-tmin" class="popup__image popup-blog__image">
+                <div class="popup-blog__header">Мало черного тмина</div>
+                <div class="popup__text popup-blog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                    quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                    Voluptatibus praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup popup-blog">
+        <div class="popup__body popup-blog__body">
+            <div class="popup__content popup-blog__content">
+                <a href="#" class="popup__close close-popup popup-blog__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/tmin.jpg" alt="Black-tmin" class="popup__image popup-blog__image">
+                <div class="popup-blog__header">Мало черного тмина</div>
+                <div class="popup__text popup-blog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                    quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                    Voluptatibus praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="popup popup-blog">
+        <div class="popup__body popup-blog__body">
+            <div class="popup__content popup-blog__content">
+                <a href="#" class="popup__close close-popup popup-blog__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/tmin.jpg" alt="Black-tmin" class="popup__image popup-blog__image">
+                <div class="popup-blog__header">Мало черного тмина</div>
+                <div class="popup__text popup-blog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                    quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                    Voluptatibus praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup4" class="popup popup-blog">
+        <div class="popup__body popup-blog__body">
+            <div class="popup__content popup-blog__content">
+                <a href="#" class="popup__close close-popup popup-blog__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/tmin.jpg" alt="Black-tmin" class="popup__image popup-blog__image">
+                <div class="popup-blog__header">Мало черного тмина</div>
+                <div class="popup__text popup-blog__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                    quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                    Voluptatibus praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-about" class="popup popup-about">
+        <div class="popup__body popup-about__body">
+            <div class="popup__content popup-about__content">
+                <a href="#" class="popup__close close-popup popup-about__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <img src="img/image-11.jpg" alt="Black-tmin" class="popup__image popup-about__image">
+                <div class="popup__text popup-about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                    distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                    praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                    quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                    Voluptatibus praesentium neque saepe.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe1" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video1" preload="auto" controls poster="img/image-1.JPG" src="videos/Recipe1.mp4" class="popup__video popup-recipe__video"></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe2" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video2" preload="auto" controls poster="img/image-2.jpg" src="videos/Recipe2.mp4" class="popup__video popup-recipe__video "></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe3" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video3" id="fon" preload="auto" controls poster="img/image-3.jpg" src="videos/Recipe3.mp4" class="popup__video popup-recipe__video"></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe4" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video4" preload="auto" controls poster="img/image-4.jpg" src="videos/Recipe4.mp4" class="popup__video popup-recipe__video"></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe5" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video5" preload="auto" controls poster="img/image-5.jpg" src="videos/Recipe5.mp4" class="popup__video popup-recipe__video"></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-recipe6" class="popup popup-recipe">
+        <div class="popup__body popup-recipe__body">
+            <div class="popup__content popup-recipe__content">
+                <a href="#" class="popup__close close-popup popup-recipe__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup-recipe__video-wrapper">
+                    <video id="video6" preload="auto" controls poster="img/image-6.jpg" src="videos/Recipe6.mp4" class="popup__video popup-recipe__video"></video>
+                </div>
+                <div class="popup__text popup-recipe__text">
+                    <div class="popup-recipe__title">Омлет со шпинатом</div>
+                    <div class="popup-recipe__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, quisquam consectetur 
+                        distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. Voluptatibus 
+                        praesentium neque saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci beatae, culpa ducimus, 
+                        quisquam consectetur distinctio ex facere totam iure aspernatur obcaecati cupiditate esse quod, repellat consequatur. 
+                        Voluptatibus praesentium neque saepe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-contact" class="popup popup-contact">
+        <div class="popup__body popup-contact__body">
+            <div class="popup__content popup-contact__content">
+                <a href="#" class="popup__close close-popup popup-contact__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="popup__text popup-contact__text">
+                    <div class="popup-contact__title">Остались вопросы?</div>
+                    <div class="popup-contact__description">
+                        Задайте его и я с радостью Вам помогу в ближайшее время!
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Задайте свой вопрос:</label>
+                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" class="checkbox__input _req" name="agreement">
+                                <label for="formAgreement" class="checkbox__label"><span>Я согласен на обработку моих персональных данных в соответствии с <a href="#">Условиями</a></span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
